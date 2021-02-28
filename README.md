@@ -1,1 +1,1 @@
-# summer-playlist-builder
+# JavaScript Development Final Project with General Assembly
