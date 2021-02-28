@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Summer Playlist Builder | by Drew Marlier</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    
+    <!-- Navigation -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark text-light">
+        <a class="navbar-brand" href="#">Summer Playlist Builder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <a href="https://open.spotify.com/playlist/2BJBOP4TOJaMKkKtABWEXB" target="_blank" class="">
+                <img id="logo" src="images/spotify-logo.png">
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Forms -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="card mb-3">
+                  <div class="card-header bg-dark text-light">
+                    <h3 class="d-inline">Song</h3>
+                  </div>
+                  <div class="card-body text-dark">
+                        <form class="form">
+                            <input id="song" type="text" class="form-control" placeholder="Song" />
+                            <input id="artist" type="text" class="form-control" placeholder="Artist"/>
+                            <button type="submit" class="btn btn-success mt-3 float-right">Add Song</button>
+                        </form>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+                <div class="card mb-3">
+                    <div class="card-header bg-dark text-light">
+                        <h3 class="d-inline">Playlist</h3>
+                    </div>
+                    <div class="card-body text-dark">
+                        <ul id="playlist" class="list-item-group">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
